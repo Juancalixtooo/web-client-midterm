@@ -5,3 +5,21 @@ Hey, I’m Juan. I study programming at LaSalle College in Montréal. Outside of
 I also work at a cocktails bar, where I switch between serving tables and bartending. I like getting to talk to different people on the floor, and behind the bar I enjoy the hands-on part of making cocktails.
 
 When I have some time to myself, I’m usually happy to grab something to eat and chill at home. A good day for me can be as simple as getting a solid workout in, having a good meal or pizza, and getting some time to relax.
+
+## From Class to Work (On fridays)
+```mermaid
+flowchart TD
+    Class["Go to class"] --> Lunch["Head home and grab something to eat"]
+    Lunch --> Training{"Training today?"}
+
+    Training -->|Yes| Gym["Check my plan and hit the gym"]
+    Training -->|No| Ready["Get ready for work"]
+    Gym --> Ready
+
+    Ready --> Shift{"What's my role tonight?"}
+    Shift -->|Server| Tables["Take orders and look after my tables"]
+    Shift -->|Bartender| Bar["Set up my well and make cocktails"]
+
+    Tables --> Home["Clock out and head home"]
+    Bar --> Home
+```
